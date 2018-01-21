@@ -94,7 +94,7 @@ scheme: Gemini
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   #LinkLabel: Link
-  GitHub: hhttps://github.com/kuangyuyu
+  GitHub: https://github.com/kuangyuyu
   Zhihu: https://www.zhihu.com/people/yu-yu-69-99-39/activities
   Weibo: http://weibo.com/u/5198381591
   #E-Mail: mailyo:yans_s@outlook.com
