@@ -10,7 +10,7 @@
   <div class="theme-info">
   <div class="powered-by"></div>
   {{ __('footer.theme') }} -
-  <a class="theme-link" href="https://github.com/fakeYanss" rel="external nofollow">
+  <a class="theme-link" href="https://github.com/kuangyuyu" rel="external nofollow">
     Github
   </a>
   </div>
@@ -29,5 +29,4 @@
 <div class="theme-info">
   <span class="post-count">博客全站共{{ totalcount(site) }}字</span>
 </div>
-<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold" rel="external nofollow">Coding Pages</a></p>
 {% endif %}
