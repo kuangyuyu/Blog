@@ -124,7 +124,7 @@ def search2(a,m):
        result=search2(a,m)
        print result
 ```
-
+下面这个程序就会陷入无限循环while中
 ```C++
 #include<studio.h>
 int bsearch(int a[],int n,int v)
@@ -144,6 +144,27 @@ int bsearch(int a[],int n,int v)
         }
         else
         return middle;  
+    }
+    return -1;
+}
+```
+以下是正确写法
+```C++
+public static int binarySearch(int[] a,int n,int x)
+{
+    if(n>0 && x>=a[0])
+    {
+        int left=0,right=n-1;
+        while(left<right)
+        {
+            int middle=left+(right-left)/2;
+            if(x<a[middle])
+            right=middle-1;
+            else 
+            left=middle;
+        }
+        if(x==a[left])
+        return left;
     }
     return -1;
 }
