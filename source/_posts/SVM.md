@@ -11,13 +11,14 @@ toc: true #是否需要目录，默认有
 password: #是否加密，为空不加密
 date: 2018-2-03 18:50:02 #日期
 ---
-
-
+![wallpaper-photo-1508367125578-6246f83905f7](http://p3nyp7kdl.bkt.clouddn.com/wallpaper-photo-1508367125578-6246f83905f7.jpg)
+适用于初学SVM
+<!-- more -->
 # 了解SVM
 
 支持向量机，因其英文名为support vector machine，故一般简称SVM，通俗来讲，它是一种二类分类模型，其基本模型定义为特征空间上的间隔最大的线性分类器，其学习策略便是间隔最大化，最终可转化为一个凸二次规划问题的求解。
 
-##1. 分类标准的起源：Logistic回归
+## 1. 分类标准的起源：Logistic回归
 
 理解SVM，咱们必须先弄清楚一个概念：线性分类器。
 
@@ -35,12 +36,12 @@ $$g(z) = \frac{1}{1+e^-z}$$的图像是：
 可以看到，上图将无穷映射到了(0,1)。
 
 假设函数就是特征属于y=1的概率。
-$$P(y=1|x;\theta) = h_\theta(x)$$
-$$P(y=0|x;\theta) = 1-h_\theta(x)$$
+$$P(y=1|x; \theta) = h_\theta(x)$$
+$$P(y=0|x; \theta) = 1-h_\theta(x)$$
 
 从而，当我们要判别一个新来的特征属于哪个类时，只需求即可，若大于0.5就是y=1的类，反之属于y=0类。
 
-此外，$h_\theta(x)$只和$\theta^Tx$有关，$\theta^Tx>0$，那么$h_\theta(x)>0.5$，而g(z)只是用来映射，真实的类别决定权还是在于$\theta^Tx$。再者，当$\theta^Tx>>0$时，$h_\theta(x)=1$，反之$h_\theta(x)=0$。如果我们只从$\theta^Tx$出发，希望模型达到的目标就是让训练数据中y=1的特征$\theta^Tx>>0$，而是y=0的特征。Logistic回归就是要学习得到$\theta$，使得正例的特征远大于0，负例的特征远小于0，而且要在全部训练实例上达到这个目标。
+此外，$h_\theta(x)$只和$\theta^Tx$有关，$\theta^Tx>0$，那么$h_\theta(x)>0.5$，而g(z)只是用来映射，真实的类别决定权还是在于$\theta^Tx$。再者，当$\theta^Tx>>0$时，$h_\theta(x)=1$，反之$h_\theta(x)=0$。如果我们只从$\theta^Tx$出发，希望模型达到的目标就是让训练数据中y=1的特征t$\theta^Tx>>0$，而是y=0的特征。Logistic回归就是要学习得到$\theta$，使得正例的特征远大于0，负例的特征远小于0，而且要在全部训练实例上达到这个目标。
 
 接下来，尝试把logistic回归做个变形。首先，将使用的结果标签y = 0和y = 1替换为y = -1,y = 1，然后将$\theta^Tx=\theta_0+\theta_1x_1+\theta_2x_2+...+\theta_nx_n(x_0=1)$中的$\theta_0$替换为b，最后将后面的$\theta_0+\theta_1x_1+\theta_2x_2+...+\theta_nx_n$替换为$\theta_0+\theta_1x_1+\theta_2x_2+...+\theta_nx_n$（即$w^Tx$）。如此，则有了$\theta^Tx=w^Tx+ b$。也就是说除了y由y=0变为y=-1外，线性分类函数跟logistic回归的形式化表示$h_\theta (x) = g(\theta^Tx) =g(w^Tx+b)$没区别。
 
@@ -95,7 +96,7 @@ $$P(y=0|x;\theta) = 1-h_\theta(x)$$
 
 从上述函数间隔和几何间隔的定义可以看出：几何间隔就是函数间隔除以||w||，而且函数间隔y*(wx+b) = y*f(x)实际上就是|f(x)|，只是人为定义的一个间隔度量，而几何间隔|f(x)|/||w||才是直观上的点到超平面的距离。
 
-##4. 最大间隔分类器Maximum Margin Classifier的定义
+## 4. 最大间隔分类器Maximum Margin Classifier的定义
 对一个数据点进行分类，当超平面离数据点的“间隔”越大，分类的确信度（confidence）也越大。所以，为了使得分类的确信度尽量高，需要让所选择的超平面能够最大化这个“间隔”值。这个间隔就是下图中的Gap的一半。
 ![](http://img.blog.csdn.net/20140829135959290)
 
