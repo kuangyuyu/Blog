@@ -1,2 +1,2 @@
 # kuangyuyu.github.io
-## [sacn my blogs](https://kuangyuyu.github.io/ "蛤蛤")
+## [sacn my blogs](https://berryk.top/ "暮雪")

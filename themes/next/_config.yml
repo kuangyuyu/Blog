@@ -382,6 +382,8 @@ jiathis: true
 # Share
 #duoshuo_share: true
 
+baidu_site_verification: yY5pucysgo
+
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
 google_site_verification: bLmMD7Mm55afcxzC1xaREgQhWHcFQT1Pcw2A-p6tvu8
