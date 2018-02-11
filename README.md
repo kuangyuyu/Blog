@@ -1,1 +1,1 @@
-[Berry's Blog](http://kuangyuyu.github.io)
+[Berry's Blog](http://berryk.top)
