@@ -1,5 +1,10 @@
 clone_depth: 5
 
+# 这里是限制了只编译有源文件的分支，这样在创建了其它分支时就不会再次编译了
+branches:
+  only:
+  - master
+
 environment:
   access_token:
     secure: k8UvenTlwXfGa2pJpez/EaZX/YJAXejHR5ivxaEcfk7nV1fMUOxIQXPD5SnYqYlP
