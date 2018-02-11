@@ -108,6 +108,6 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo:
-      github: https://github.com/kuangyuyu/kuangyuyu.github.io.git
+    repo: https://github.com/kuangyuyu/kuangyuyu.github.io.git
+    branch: gh-pages     
   - type: baidu_url_submitter
