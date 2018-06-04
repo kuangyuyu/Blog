@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 ---
 title: Gan（1）：GAN #标题
 categories: 深度学习 #分类，可多个；若单个去掉括号
 tags: [深度学习] #标签，可多个；若单个去掉括号
 mathjax: true #是否引用公式
 kewords: #本文关键词
-description: #本文描述，若为空就自动全文前150字)
+description: #本文描述，若为空就自动全文前150字
 copyright: true #是否需要版权申明，默认有
 reward: true #是否需要打赏，默认有
 toc: true #是否需要目录，默认有
