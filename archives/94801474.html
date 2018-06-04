@@ -139,7 +139,7 @@
 <meta property="og:image" content="http://p3nyp7kdl.bkt.clouddn.com/@U2%[GIW3(D`_Q7]LYKZ(HO.png">
 <meta property="og:image" content="http://p3nyp7kdl.bkt.clouddn.com/b.png">
 <meta property="og:image" content="http://p3nyp7kdl.bkt.clouddn.com/c.png">
-<meta property="og:updated_time" content="2018-02-18T13:30:36.657Z">
+<meta property="og:updated_time" content="2018-06-04T03:56:28.824Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习笔记（八）：面试中常问的问题">
 <meta name="twitter:description" content="机器学习方面SVM 支撑平面：和支持向量相交的平面；分割平面：支撑平面中间的平面。（最优分类平面）  SVM不是定义损失，而是定义支持向量之间的距离。  正则化参数对支持向量数的影响： 在任一个机器学习模型的训练过程中，被最大化或者最小化的那个函数，叫作“目标函数”（objective function）。 目标函数可以有很多种，比如数据的（（负）对数）似然值，比如margin的大小，比如均方误差">
@@ -567,7 +567,7 @@
 </ol>
 <p>在线性可分的情况下,LDA求出的wl与线性核支持向量机求出的ws有wl∗ws=0，即垂直，此时两者是等价的。</p>
 <p>当初在做这个题的时候也没细想，就想当然的认为在线性可分时两者求出来的w会垂直，现在看来并不一定。<br>首先，如果可以使用软间隔的线性SVM，其实线性可分这个条件是不必要的，如果是硬间隔线性SVM，那么线性可分是必要条件。这个题只说了是线性SVM，就没必要关心数据是不是可分，毕竟LDA是都可以处理的。<br>第二，假如当前样本线性可分，且SVM与LDA求出的结果相互垂直。当SVM的支持向量固定时，再加入新的样本，并不会改变求出的w，但是新加入的样本会改变原类型数据的协方差和均值，从而导致LDA求出的结果发生改变。这个时候两者的w就不垂直了，但是数据依然是可分的。所以我上面说的垂直是有问题的。<br>我认为这个题的答案应该就是，当线性SVM和LDA求出的w互相垂直时，两者是等价的，SVM这个时候也就比LDA多了个偏移b而已。</p>
-<ol>
+<ol start="2">
 <li>试述高斯核SVM与RBF神经网络的联系。<br><img src="http://p3nyp7kdl.bkt.clouddn.com/%W%}Y(H3IP`BJMOCIYMUS5G.png" alt=""><br>RBF网络的径向基函数与SVM都可以采用高斯核，也就分别得到了高斯核RBF网络与高斯核SVM.</li>
 </ol>
 <ul>
@@ -576,7 +576,7 @@
 <li>使用LIBSVM对异或问题训练一个高斯核SVM得到$\alpha$，修改第五章RBF网络的代码，固定$\beta$参数为高斯核SVM的参数，修改每个隐层神经元的中心为各个输入参数，得到结果W，w和$\alpha$各项成正比例。</li>
 </ul>
 <p>上述第三条我不懂，有哪位大神看到了请给解释下，谢谢。</p>
-<ol>
+<ol start="3">
 <li>试析SVM对噪声敏感的原因。</li>
 </ol>
 <ul>
@@ -768,6 +768,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/archives/0.html" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -869,7 +873,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">26</span>
                 <span class="site-state-item-name">文章</span>
               </a>
             </div>
@@ -1035,7 +1039,7 @@
 </div>
 
 <div class="theme-info">
-  <span class="post-count">博客全站共48.0k字</span>
+  <span class="post-count">博客全站共54.4k字</span>
 </div>
 
 
