@@ -14,8 +14,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[图像处理-裁剪图片]]></title>
-    <url>%2Farchives%2F6f4f17c0.html</url>
+    <title><![CDATA[图像处理3-裁剪图片]]></title>
+    <url>%2Farchives%2Ffd12ced4.html</url>
     <content type="text"><![CDATA[裁剪图片完整python代码如下: 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859# -*- coding: utf-8 -*-import cv2import osimport reimport numpy as np#这里h,w分别是height和widthh,w = (600,500)sp = [0,0]bd = FalseSCALE_FACTOR=1def click_and_crop(event, x, y, flags, param): global sp if event == cv2.EVENT_MOUSEMOVE: sp = [y,x]#这里感谢我bf写了一个for循环遍历要读的图片,如果你只有一两张的情况下就不用#n1 = 'h'#fn1 = n1 + '1.jpg'#fn2 = n1 + '2.jpg'#im1 = cv2.imread('./' + fn1)#im2 = cv2.imread('./' + fn2)for i in range(1,61): # 这里的h是指,以h开口的图片名,比如h1,h2一直到h60,便于我读 locals()['fn' + str(i)] = 'h' + str(i) + '.jpg' locals()['im' + str(i)] = cv2.imread('./' + locals()['fn' + str(i)])cv2.namedWindow("image")cv2.setMouseCallback("image", click_and_crop)# keep looping until the 'q' key is pressedwhile True:# display the image and wait for a keypress &amp;(sp[0]+h&lt;im.shape[0])&amp;(sp[1]+w&lt;im.shape[1]) cv2.imshow("image", im2) cim2 = im2[sp[0]:sp[0]+h,sp[1]:sp[1]+w] cv2.imshow("ROI", cim2) key = cv2.waitKey(10) &amp; 0xFF if (key == ord("y"))&amp;(sp[0]+h&lt;im2.shape[0])&amp;(sp[1]+w&lt;im2.shape[1]): #依然是按y保存,c终止 cim1 = im1[sp[0]:sp[0]+h,sp[1]:sp[1]+w] #同样的,如果你只有两张图片,那么下面的for循环可以不要,我这里是遍历60张图片 for i in range(3, 61): locals()['cim' + str(i)] = locals()['im' + str(i)][sp[0]:sp[0]+h,sp[1]:sp[1]+w] #cv2.imwrite('./c_' + fn1,cim1) #cv2.imwrite('./c_' + fn2,cim2) for i in range(1, 61): cv2.imwrite('./c_' + locals()['fn' + str(i)], locals()['cim' + str(i)]) #最终是在原图片的名字之前加上c_;比如之前是h1,那么裁剪之后的图片就是c_h1 break print 'done' elif key == ord("c"): break cv2.destroyAllWindows()]]></content>
       <categories>
         <category>图像处理</category>
@@ -27,8 +27,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[图像处理-放缩图片]]></title>
-    <url>%2Farchives%2Fcce42cf6.html</url>
+    <title><![CDATA[图像处理2-放缩图片]]></title>
+    <url>%2Farchives%2Fc3b61494.html</url>
     <content type="text"><![CDATA[放缩图片在处理大量图像时,往往需要size归一化,这里就涉及放缩变化,加边框,裁剪,后面一一叙述;这里opencv发挥很大的作用. 完整python代码如下: 12345678910111213141516171819202122232425262728293031323334353637# -*- coding: utf-8 -*-import cv2SCALE_FACTOR = 1#调整图像大小，点s键缩小图像，点b键放大图像，点y键确认保存def resize(fname): newname='d_'+fname global SCALE_FACTOR im = cv2.imread(fname, cv2.IMREAD_COLOR) print im.shape# if im == None:# print 'No such image'# else: cv2.imshow('Image',im) k = cv2.waitKey(0) &amp; 0xFF #这里0rd(121)就是代表 char y;0rd(115)是char s;0rd(98)是char b if k ==121: cv2.destroyAllWindows() else: while(k!=121): if k == 115: SCALE_FACTOR -=0.1 tm = cv2.resize(im, (int(im.shape[1] * SCALE_FACTOR),int(im.shape[0] * SCALE_FACTOR))) cv2.imshow('Image',tm) elif k==98: SCALE_FACTOR +=0.1 tm = cv2.resize(im, (int(im.shape[1] * SCALE_FACTOR),int(im.shape[0] * SCALE_FACTOR))) cv2.imshow('Image',tm) k = cv2.waitKey(0) &amp; 0xFF cv2.imwrite(newname, tm) cv2.destroyAllWindows()if __name__ == "__main__": fname = 'h1111.png' resize(fname)]]></content>
       <categories>
         <category>图像处理</category>
@@ -40,8 +40,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[图像处理-打点]]></title>
-    <url>%2Farchives%2Fd0f27de1.html</url>
+    <title><![CDATA[图像处理1-打点]]></title>
+    <url>%2Farchives%2F176dc8b7.html</url>
     <content type="text"><![CDATA[打点验证最终的输出点是否正确首先,读取.txt中的像素点的数据:import numpy as np; 其次,将像素点画到对应的图像中:import matplot.pyplot as plt; 最后,显示图片:from PIL import Image; 完整python代码如下: 12345678910111213141516171819import numpy as npimport matplotlib.pyplot as pltfrom PIL import Imagef= open("fit.txt","r")//改成你自己的文件名i=0arr=np.zeros((66,2),dtype=float)//改成你自己文件里面点的个数,维度for lines in f.readlines(): i=i+1 if(i&gt;2 and i&lt;69): line=lines.split("\t") arr[i-3][0]=line[0] arr[i-3][1]=line[1]filename="girl.jpg"//改成自己的图片名img=Image.open(filename)plt.figure()plt.imshow(img)plt.scatter(arr[:,0],arr[:,1], marker='+',color='green')plt.show()]]></content>
       <categories>
         <category>图像处理</category>
