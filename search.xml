@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[图像处理4-添加边框]]></title>
+    <url>%2Farchives%2F391f3507.html</url>
+    <content type="text"><![CDATA[添加边框有时候在裁剪的时候发现,图片不够大,但是又不想放大图片导致图片分辨率变低,那就可以加边框 完整python代码如下: 123456789101112131415161718192021222324# -*- coding: utf-8 -*-import cv2import numpy as npimname = 'd1.jpg'im = cv2.imread(imname)h,w,c = im.shapecv2.namedWindow("image")cv2.imshow("image", im)th=1000tw=1200bd = np.ones((th,tw,c),np.uint8)*253sh = (th-h)/2sw = (tw-w)/2bd[sh:sh+h,sw:sw+w,:] = imcv2.namedWindow("bd")cv2.imshow("bd", bd)cv2.waitKey(0)cv2.destroyAllWindows()cv2.imwrite('d.jpg',bd)]]></content>
+      <categories>
+        <category>图像处理</category>
+      </categories>
+      <tags>
+        <tag>数据处理</tag>
+        <tag>图像处理</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[图像处理-裁剪图片]]></title>
+    <url>%2Farchives%2F6f4f17c0.html</url>
+    <content type="text"><![CDATA[裁剪图片完整python代码如下: 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859# -*- coding: utf-8 -*-import cv2import osimport reimport numpy as np#这里h,w分别是height和widthh,w = (600,500)sp = [0,0]bd = FalseSCALE_FACTOR=1def click_and_crop(event, x, y, flags, param): global sp if event == cv2.EVENT_MOUSEMOVE: sp = [y,x]#这里感谢我bf写了一个for循环遍历要读的图片,如果你只有一两张的情况下就不用#n1 = 'h'#fn1 = n1 + '1.jpg'#fn2 = n1 + '2.jpg'#im1 = cv2.imread('./' + fn1)#im2 = cv2.imread('./' + fn2)for i in range(1,61): # 这里的h是指,以h开口的图片名,比如h1,h2一直到h60,便于我读 locals()['fn' + str(i)] = 'h' + str(i) + '.jpg' locals()['im' + str(i)] = cv2.imread('./' + locals()['fn' + str(i)])cv2.namedWindow("image")cv2.setMouseCallback("image", click_and_crop)# keep looping until the 'q' key is pressedwhile True:# display the image and wait for a keypress &amp;(sp[0]+h&lt;im.shape[0])&amp;(sp[1]+w&lt;im.shape[1]) cv2.imshow("image", im2) cim2 = im2[sp[0]:sp[0]+h,sp[1]:sp[1]+w] cv2.imshow("ROI", cim2) key = cv2.waitKey(10) &amp; 0xFF if (key == ord("y"))&amp;(sp[0]+h&lt;im2.shape[0])&amp;(sp[1]+w&lt;im2.shape[1]): #依然是按y保存,c终止 cim1 = im1[sp[0]:sp[0]+h,sp[1]:sp[1]+w] #同样的,如果你只有两张图片,那么下面的for循环可以不要,我这里是遍历60张图片 for i in range(3, 61): locals()['cim' + str(i)] = locals()['im' + str(i)][sp[0]:sp[0]+h,sp[1]:sp[1]+w] #cv2.imwrite('./c_' + fn1,cim1) #cv2.imwrite('./c_' + fn2,cim2) for i in range(1, 61): cv2.imwrite('./c_' + locals()['fn' + str(i)], locals()['cim' + str(i)]) #最终是在原图片的名字之前加上c_;比如之前是h1,那么裁剪之后的图片就是c_h1 break print 'done' elif key == ord("c"): break cv2.destroyAllWindows()]]></content>
+      <categories>
+        <category>图像处理</category>
+      </categories>
+      <tags>
+        <tag>数据处理</tag>
+        <tag>图像处理</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[图像处理-放缩图片]]></title>
+    <url>%2Farchives%2Fcce42cf6.html</url>
+    <content type="text"><![CDATA[放缩图片在处理大量图像时,往往需要size归一化,这里就涉及放缩变化,加边框,裁剪,后面一一叙述;这里opencv发挥很大的作用. 完整python代码如下: 12345678910111213141516171819202122232425262728293031323334353637# -*- coding: utf-8 -*-import cv2SCALE_FACTOR = 1#调整图像大小，点s键缩小图像，点b键放大图像，点y键确认保存def resize(fname): newname='d_'+fname global SCALE_FACTOR im = cv2.imread(fname, cv2.IMREAD_COLOR) print im.shape# if im == None:# print 'No such image'# else: cv2.imshow('Image',im) k = cv2.waitKey(0) &amp; 0xFF #这里0rd(121)就是代表 char y;0rd(115)是char s;0rd(98)是char b if k ==121: cv2.destroyAllWindows() else: while(k!=121): if k == 115: SCALE_FACTOR -=0.1 tm = cv2.resize(im, (int(im.shape[1] * SCALE_FACTOR),int(im.shape[0] * SCALE_FACTOR))) cv2.imshow('Image',tm) elif k==98: SCALE_FACTOR +=0.1 tm = cv2.resize(im, (int(im.shape[1] * SCALE_FACTOR),int(im.shape[0] * SCALE_FACTOR))) cv2.imshow('Image',tm) k = cv2.waitKey(0) &amp; 0xFF cv2.imwrite(newname, tm) cv2.destroyAllWindows()if __name__ == "__main__": fname = 'h1111.png' resize(fname)]]></content>
+      <categories>
+        <category>图像处理</category>
+      </categories>
+      <tags>
+        <tag>数据处理</tag>
+        <tag>图像处理</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[图像处理-打点]]></title>
     <url>%2Farchives%2Fd0f27de1.html</url>
     <content type="text"><![CDATA[打点验证最终的输出点是否正确首先,读取.txt中的像素点的数据:import numpy as np; 其次,将像素点画到对应的图像中:import matplot.pyplot as plt; 最后,显示图片:from PIL import Image; 完整python代码如下: 12345678910111213141516171819import numpy as npimport matplotlib.pyplot as pltfrom PIL import Imagef= open("fit.txt","r")//改成你自己的文件名i=0arr=np.zeros((66,2),dtype=float)//改成你自己文件里面点的个数,维度for lines in f.readlines(): i=i+1 if(i&gt;2 and i&lt;69): line=lines.split("\t") arr[i-3][0]=line[0] arr[i-3][1]=line[1]filename="girl.jpg"//改成自己的图片名img=Image.open(filename)plt.figure()plt.imshow(img)plt.scatter(arr[:,0],arr[:,1], marker='+',color='green')plt.show()]]></content>
@@ -194,8 +233,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据结构（四）]]></title>
-    <url>%2Farchives%2Fdc598fb7.html</url>
+    <title><![CDATA[字符串]]></title>
+    <url>%2Farchives%2Ffc81fbfd.html</url>
     <content type="text"><![CDATA[字符串例：下面 是‘ abcd321ABCD ’的子串。DA.abcdB.321abC.‘abc ABC’D.‘21AB’ 串中任意个连续的字符组成的子序列称为该串的子串。 空串和本身都算做本字符串的字串。 将两个字符串连接起来组成一个字符串时，选用（ ）函数。A.strlen()B.strcap()C.strcat()D.strcmp() strcat()字符串连接字符 strcmp()字符串大小比较 赋值不能把字符串”HELLO!”赋给数组b的语句是（）A.char b[10]={‘H’，’E’，’L’，’L’，’O’，’!’，’\0’};B.char b[10];b=”HELLO!”;C.char b[10];strcpy(b，”HELLO!”);D.char b[10]=”HELLO!”; 字符数组初始化有两种方法：一种是逐个字符赋值，另一种是用字符常量对整个数组赋值。 A是第一种，D是第二种。显然第一种比第二种繁琐复杂。 选项B并没有将数组b赋值为 hello！ 因子b是数组的首地址，b=”HELLO!”;是改变了这个指针的指向，是错误的。 C是字符串拷贝函数。函数格式： char strcpy (char s1, const char *s2);功能： 将S2所指的字符串拷贝到S1所指的字符串中。说明：（1）参数S1S2都是指向字符串的指针。S1可以是字符数组名或字符指针，但不能是字符型常量，S2可以是字符串常量、字符数组或字符指针。（2）将S2所指的字符串拷贝到S1所指的字符串中，用赋值语句S1=S2;是不行的，赋值语句要求左边是左值，S1是常量。 （3）要保证S1的长度足够大，以便能容纳下S2所指的字符串，否则引起错误。 C 对于非strtic型数组不初始化，其元素值不能确定。对strtic数组元素不赋初值，系统会自动赋以0值。（参考） 安全值？判断下述语句的对错：MFC中CString是类型安全的类。（对） 类型安全就是说，如果两个类型直接要相互转换，必须要显示的转换，不能偷偷摸摸的只用一个等于号就隐式转换了。 MFC数据类型转换标准库std的string 和MFC类库CString之间可以通过CString的format方法进行转换 类型安全不是一种类型，是有关类型操作一种规范。 如：不让不同类型的数据相互转换int Num =3;string Str=”3”;Num =Str; //错Num=int.Parse(Str);//对类型安全要求可以相互转换的不同类型数据在转换时 显式转换 字符串倒序请找出下面代码中的所有错误。说明：以下代码是把一个字符串倒序，如“abcd”倒序后变为“dcba”。 123456789101112131415#include "string.h" int main() &#123; char *src = "hello,world"; char *dest = NULL; int len = strlen(src); dest = (char *)malloc(len); char *d = dest; char *s = src[len]; while (len-- != 0) *d++ = *s--; printf("%s", dest); return 0; &#125; 第7行要为’\0’分配一个空间 第9行改成char * s = &amp;src[len-1] 第12行前要加上*d = ‘\0’ 第13行前要加上free(dest)释放空间 方法一：1234567891011121314int main()&#123; char *src = "hello,world"; int len = strlen(src); char *dest = (char *)malloc(len + 1); //要为\0分配一个空间 char *d = dest; char *s = &amp;src[len - 1]; //指向最后一个字符 while ( len-- != 0 ) *d++ = *s--; *d = 0; //尾部要加\0 printf("%s\n", dest); free(dest);// 使用完，应当释放空间，以免造成内存汇泄露 return 0;&#125; 方法二1234567891011121314int main()&#123; char str[] = "hello,world"; int len = strlen(str); char t; for (int i = 0; i &lt; len; i++) &#123; t = str[i]; str[i] = str[len - i - 1]; str[len - i - 1] = t; &#125; printf("%s", str); return 0;&#125;]]></content>
       <categories>
         <category>数据结构</category>
@@ -209,8 +248,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[字符串]]></title>
-    <url>%2Farchives%2Ffc81fbfd.html</url>
+    <title><![CDATA[数据结构（四）]]></title>
+    <url>%2Farchives%2Fdc598fb7.html</url>
     <content type="text"><![CDATA[字符串例：下面 是‘ abcd321ABCD ’的子串。DA.abcdB.321abC.‘abc ABC’D.‘21AB’ 串中任意个连续的字符组成的子序列称为该串的子串。 空串和本身都算做本字符串的字串。 将两个字符串连接起来组成一个字符串时，选用（ ）函数。A.strlen()B.strcap()C.strcat()D.strcmp() strcat()字符串连接字符 strcmp()字符串大小比较 赋值不能把字符串”HELLO!”赋给数组b的语句是（）A.char b[10]={‘H’，’E’，’L’，’L’，’O’，’!’，’\0’};B.char b[10];b=”HELLO!”;C.char b[10];strcpy(b，”HELLO!”);D.char b[10]=”HELLO!”; 字符数组初始化有两种方法：一种是逐个字符赋值，另一种是用字符常量对整个数组赋值。 A是第一种，D是第二种。显然第一种比第二种繁琐复杂。 选项B并没有将数组b赋值为 hello！ 因子b是数组的首地址，b=”HELLO!”;是改变了这个指针的指向，是错误的。 C是字符串拷贝函数。函数格式： char strcpy (char s1, const char *s2);功能： 将S2所指的字符串拷贝到S1所指的字符串中。说明：（1）参数S1S2都是指向字符串的指针。S1可以是字符数组名或字符指针，但不能是字符型常量，S2可以是字符串常量、字符数组或字符指针。（2）将S2所指的字符串拷贝到S1所指的字符串中，用赋值语句S1=S2;是不行的，赋值语句要求左边是左值，S1是常量。 （3）要保证S1的长度足够大，以便能容纳下S2所指的字符串，否则引起错误。 C 对于非strtic型数组不初始化，其元素值不能确定。对strtic数组元素不赋初值，系统会自动赋以0值。（参考） 安全值？判断下述语句的对错：MFC中CString是类型安全的类。（对） 类型安全就是说，如果两个类型直接要相互转换，必须要显示的转换，不能偷偷摸摸的只用一个等于号就隐式转换了。 MFC数据类型转换标准库std的string 和MFC类库CString之间可以通过CString的format方法进行转换 类型安全不是一种类型，是有关类型操作一种规范。 如：不让不同类型的数据相互转换int Num =3;string Str=”3”;Num =Str; //错Num=int.Parse(Str);//对类型安全要求可以相互转换的不同类型数据在转换时 显式转换 字符串倒序请找出下面代码中的所有错误。说明：以下代码是把一个字符串倒序，如“abcd”倒序后变为“dcba”。 123456789101112131415#include "string.h" int main() &#123; char *src = "hello,world"; char *dest = NULL; int len = strlen(src); dest = (char *)malloc(len); char *d = dest; char *s = src[len]; while (len-- != 0) *d++ = *s--; printf("%s", dest); return 0; &#125; 第7行要为’\0’分配一个空间 第9行改成char * s = &amp;src[len-1] 第12行前要加上*d = ‘\0’ 第13行前要加上free(dest)释放空间 方法一：1234567891011121314int main()&#123; char *src = "hello,world"; int len = strlen(src); char *dest = (char *)malloc(len + 1); //要为\0分配一个空间 char *d = dest; char *s = &amp;src[len - 1]; //指向最后一个字符 while ( len-- != 0 ) *d++ = *s--; *d = 0; //尾部要加\0 printf("%s\n", dest); free(dest);// 使用完，应当释放空间，以免造成内存汇泄露 return 0;&#125; 方法二1234567891011121314int main()&#123; char str[] = "hello,world"; int len = strlen(str); char t; for (int i = 0; i &lt; len; i++) &#123; t = str[i]; str[i] = str[len - i - 1]; str[len - i - 1] = t; &#125; printf("%s", str); return 0;&#125;]]></content>
       <categories>
         <category>数据结构</category>
