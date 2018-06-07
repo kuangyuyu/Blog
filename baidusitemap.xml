@@ -3,24 +3,23 @@
 
 
     
+    
   <url>
-    <loc>http://berryk.top/archives/3b1227e5.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
+    <loc>http://berryk.top/archives/91ed9b4a.html</loc>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
-        <title>算法（二）</title>
-        <pubTime>2018-02-04T22:50:02.000Z</pubTime>
+        <title>机器学习笔记（五）：正则化</title>
+        <pubTime>2018-02-09T16:50:02.000Z</pubTime>
         
-        <tag>算法面试</tag>
+        <tag>深度学习</tag>
          
-        <tag>深度学习面试</tag>
-         
-        <tag>机器学习面试</tag>
+        <tag>算法</tag>
          
          
            
              
-              <breadCrumb title="算法工程师面试" url="http://berryk.top/categories/%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%9D%A2%E8%AF%95/"/>
+              <breadCrumb title="机器学习" url="http://berryk.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -29,10 +28,9 @@
     
     
     
-    
   <url>
     <loc>http://berryk.top/archives/e84feb7d.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
         <title>机器学习笔记（七）：GAN</title>
@@ -54,7 +52,7 @@
     
   <url>
     <loc>http://berryk.top/archives/b04cb3d.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
         <title>算法（一）</title>
@@ -78,7 +76,7 @@
     
   <url>
     <loc>http://berryk.top/archives/919c217.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
         <title>机器学习笔记（四）：AdaBoost算法 Boosting和Bagging等</title>
@@ -100,7 +98,7 @@
     
   <url>
     <loc>http://berryk.top/archives/46254cea.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
         <title>机器学习笔记（六）：SVM</title>
@@ -123,52 +121,8 @@
 
     
   <url>
-    <loc>http://berryk.top/archives/fe892b9e.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
-    <data>
-        <display>
-        <title>机器学习笔记（二）：常识性知识</title>
-        <pubTime>2018-01-24T21:50:02.000Z</pubTime>
-        
-        <tag>深度学习</tag>
-         
-        <tag>算法</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="http://berryk.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://berryk.top/archives/8823626c.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
-    <data>
-        <display>
-        <title>机器学习笔记（三）：SVM核函数等</title>
-        <pubTime>2018-01-25T17:50:02.000Z</pubTime>
-        
-        <tag>深度学习</tag>
-         
-        <tag>算法</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="http://berryk.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://berryk.top/archives/9c49b8cc.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
         <title>别人的算法题</title>
@@ -192,7 +146,7 @@
     
   <url>
     <loc>http://berryk.top/archives/760c84b7.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
         <title>算法（三）</title>
@@ -215,12 +169,36 @@
 
     
   <url>
-    <loc>http://berryk.top/archives/91ed9b4a.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
+    <loc>http://berryk.top/archives/3b1227e5.html</loc>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
-        <title>机器学习笔记（五）：正则化</title>
-        <pubTime>2018-02-09T16:50:02.000Z</pubTime>
+        <title>算法（二）</title>
+        <pubTime>2018-02-04T22:50:02.000Z</pubTime>
+        
+        <tag>算法面试</tag>
+         
+        <tag>深度学习面试</tag>
+         
+        <tag>机器学习面试</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法工程师面试" url="http://berryk.top/categories/%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%9D%A2%E8%AF%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://berryk.top/archives/fe892b9e.html</loc>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习笔记（二）：常识性知识</title>
+        <pubTime>2018-01-24T21:50:02.000Z</pubTime>
         
         <tag>深度学习</tag>
          
@@ -237,8 +215,54 @@
 
     
   <url>
+    <loc>http://berryk.top/archives/8823626c.html</loc>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习笔记（三）：SVM核函数等</title>
+        <pubTime>2018-01-25T17:50:02.000Z</pubTime>
+        
+        <tag>深度学习</tag>
+         
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="http://berryk.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://berryk.top/archives/94801474.html</loc>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习笔记（八）：面试中常问的问题</title>
+        <pubTime>2018-02-16T10:09:02.000Z</pubTime>
+        
+        <tag>深度学习</tag>
+         
+        <tag>算法</tag>
+         
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="http://berryk.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://berryk.top/archives/e6655ec0.html</loc>
-    <lastmod>2018-06-06T03:21:12.642Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
         <title>机器学习笔记（一）：NG的课程</title>
@@ -259,32 +283,8 @@
 
     
   <url>
-    <loc>http://berryk.top/archives/c3b61494.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
-    <data>
-        <display>
-        <title>图像处理2-放缩图片</title>
-        <pubTime>2018-06-05T12:50:02.000Z</pubTime>
-        
-        <tag>数据处理</tag>
-         
-        <tag>图像处理</tag>
-         
-        <tag>python</tag>
-         
-         
-           
-             
-              <breadCrumb title="图像处理" url="http://berryk.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://berryk.top/archives/fc81fbfd.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.868Z</lastmod>
     <data>
         <display>
         <title>字符串</title>
@@ -311,8 +311,108 @@
 
     
   <url>
+    <loc>http://berryk.top/archives/176dc8b7.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
+    <data>
+        <display>
+        <title>图像处理1-打点</title>
+        <pubTime>2018-06-04T22:50:02.000Z</pubTime>
+        
+        <tag>数据处理</tag>
+         
+        <tag>图像处理</tag>
+         
+        <tag>python</tag>
+         
+         
+           
+             
+              <breadCrumb title="图像处理" url="http://berryk.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://berryk.top/archives/266a3580.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
+    <data>
+        <display>
+        <title>数据结构（二）</title>
+        <pubTime>2018-02-02T22:50:02.000Z</pubTime>
+        
+        <tag>数据结构</tag>
+         
+        <tag>堆</tag>
+         
+        <tag>栈</tag>
+         
+        <tag>图</tag>
+         
+        <tag>树</tag>
+         
+         
+           
+             
+              <breadCrumb title="数据结构" url="http://berryk.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://berryk.top/archives/a5f2e45a.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
+    <data>
+        <display>
+        <title>Gan（1）：GAN</title>
+        <pubTime>2018-05-29T10:09:02.000Z</pubTime>
+        
+        <tag>深度学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="深度学习" url="http://berryk.top/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://berryk.top/archives/167cd958.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
+    <data>
+        <display>
+        <title>数据结构（一）</title>
+        <pubTime>2018-01-28T20:02:00.000Z</pubTime>
+        
+        <tag>数据结构</tag>
+         
+        <tag>堆</tag>
+         
+        <tag>栈</tag>
+         
+        <tag>图</tag>
+         
+        <tag>树</tag>
+         
+         
+           
+             
+              <breadCrumb title="数据结构" url="http://berryk.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://berryk.top/archives/6b7496d2.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
         <title>数据结构（三）</title>
@@ -339,32 +439,8 @@
 
     
   <url>
-    <loc>http://berryk.top/archives/2853aed2.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
-    <data>
-        <display>
-        <title>剑指offer（三）：1-6</title>
-        <pubTime>2018-02-08T12:09:02.000Z</pubTime>
-        
-        <tag>查找</tag>
-         
-        <tag>替换空格</tag>
-         
-        <tag>打印链表</tag>
-         
-         
-           
-             
-              <breadCrumb title="剑指offer" url="http://berryk.top/categories/%E5%89%91%E6%8C%87offer/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://berryk.top/archives/dc598fb7.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
         <title>数据结构（四）</title>
@@ -392,7 +468,7 @@
     
   <url>
     <loc>http://berryk.top/archives/391f3507.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
         <title>图像处理4-添加边框</title>
@@ -415,84 +491,8 @@
 
     
   <url>
-    <loc>http://berryk.top/archives/c071cc58.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
-    <data>
-        <display>
-        <title>剑指offer（二）:栈，队，数组</title>
-        <pubTime>2018-01-30T15:09:02.000Z</pubTime>
-        
-        <tag>查找</tag>
-         
-        <tag>替换空格</tag>
-         
-        <tag>打印链表</tag>
-         
-         
-           
-             
-              <breadCrumb title="剑指offer" url="http://berryk.top/categories/%E5%89%91%E6%8C%87offer/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://berryk.top/archives/167cd958.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
-    <data>
-        <display>
-        <title>数据结构（一）</title>
-        <pubTime>2018-01-28T20:02:00.000Z</pubTime>
-        
-        <tag>数据结构</tag>
-         
-        <tag>堆</tag>
-         
-        <tag>栈</tag>
-         
-        <tag>图</tag>
-         
-        <tag>树</tag>
-         
-         
-           
-             
-              <breadCrumb title="数据结构" url="http://berryk.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://berryk.top/archives/94801474.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
-    <data>
-        <display>
-        <title>机器学习笔记（八）：面试中常问的问题</title>
-        <pubTime>2018-02-16T10:09:02.000Z</pubTime>
-        
-        <tag>深度学习</tag>
-         
-        <tag>算法</tag>
-         
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="http://berryk.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://berryk.top/archives/fd12ced4.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
         <title>图像处理3-裁剪图片</title>
@@ -515,40 +515,12 @@
 
     
   <url>
-    <loc>http://berryk.top/archives/266a3580.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <loc>http://berryk.top/archives/c3b61494.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
-        <title>数据结构（二）</title>
-        <pubTime>2018-02-02T22:50:02.000Z</pubTime>
-        
-        <tag>数据结构</tag>
-         
-        <tag>堆</tag>
-         
-        <tag>栈</tag>
-         
-        <tag>图</tag>
-         
-        <tag>树</tag>
-         
-         
-           
-             
-              <breadCrumb title="数据结构" url="http://berryk.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://berryk.top/archives/176dc8b7.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
-    <data>
-        <display>
-        <title>图像处理1-打点</title>
-        <pubTime>2018-06-04T22:50:02.000Z</pubTime>
+        <title>图像处理2-放缩图片</title>
+        <pubTime>2018-06-05T12:50:02.000Z</pubTime>
         
         <tag>数据处理</tag>
          
@@ -567,8 +539,26 @@
 
     
   <url>
+    <loc>http://berryk.top/archives/59ba8169.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
+    <data>
+        <display>
+        <title>如何提交博客</title>
+        <pubTime>2017-07-29T15:12:02.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="技术文档" url="http://berryk.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://berryk.top/archives/2bae0a51.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
         <title>剑指offer（四）：7-13</title>
@@ -592,7 +582,7 @@
     
   <url>
     <loc>http://berryk.top/archives/987c2640.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
         <title>剑指offer（六）：19-23</title>
@@ -615,8 +605,32 @@
 
     
   <url>
+    <loc>http://berryk.top/archives/e26fa12f.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
+    <data>
+        <display>
+        <title>剑指offer（五）：14-18</title>
+        <pubTime>2018-02-13T10:09:02.000Z</pubTime>
+        
+        <tag>查找</tag>
+         
+        <tag>替换空格</tag>
+         
+        <tag>打印链表</tag>
+         
+         
+           
+             
+              <breadCrumb title="剑指offer" url="http://berryk.top/categories/%E5%89%91%E6%8C%87offer/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://berryk.top/archives/2530a991.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
         <title>图像处理5-视频-图片切换ffmpeg</title>
@@ -639,12 +653,12 @@
 
     
   <url>
-    <loc>http://berryk.top/archives/e26fa12f.html</loc>
-    <lastmod>2018-06-06T03:21:12.633Z</lastmod>
+    <loc>http://berryk.top/archives/c071cc58.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
-        <title>剑指offer（五）：14-18</title>
-        <pubTime>2018-02-13T10:09:02.000Z</pubTime>
+        <title>剑指offer（二）:栈，队，数组</title>
+        <pubTime>2018-01-30T15:09:02.000Z</pubTime>
         
         <tag>查找</tag>
          
@@ -664,37 +678,23 @@
     
     
   <url>
-    <loc>http://berryk.top/archives/a5f2e45a.html</loc>
-    <lastmod>2018-06-06T03:21:12.619Z</lastmod>
+    <loc>http://berryk.top/archives/2853aed2.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
-        <title>Gan（1）：GAN</title>
-        <pubTime>2018-05-29T10:09:02.000Z</pubTime>
+        <title>剑指offer（三）：1-6</title>
+        <pubTime>2018-02-08T12:09:02.000Z</pubTime>
         
-        <tag>深度学习</tag>
+        <tag>查找</tag>
+         
+        <tag>替换空格</tag>
+         
+        <tag>打印链表</tag>
          
          
            
              
-              <breadCrumb title="深度学习" url="http://berryk.top/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://berryk.top/archives/59ba8169.html</loc>
-    <lastmod>2018-06-06T03:21:12.619Z</lastmod>
-    <data>
-        <display>
-        <title>如何提交博客</title>
-        <pubTime>2017-07-29T15:12:02.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="技术文档" url="http://berryk.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/"/>
+              <breadCrumb title="剑指offer" url="http://berryk.top/categories/%E5%89%91%E6%8C%87offer/"/>
           
         </display>
     </data>
@@ -703,7 +703,7 @@
     
   <url>
     <loc>http://berryk.top/archives/8ad708de.html</loc>
-    <lastmod>2018-06-06T03:21:12.619Z</lastmod>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
     <data>
         <display>
         <title>剑指offer（一）</title>
@@ -719,6 +719,30 @@
            
              
               <breadCrumb title="剑指offer" url="http://berryk.top/categories/%E5%89%91%E6%8C%87offer/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://berryk.top/archives/1616918e.html</loc>
+    <lastmod>2018-06-07T07:38:13.853Z</lastmod>
+    <data>
+        <display>
+        <title>1.python程序打包成.exe可执行文件</title>
+        <pubTime>2018-06-07T15:50:02.000Z</pubTime>
+        
+        <tag>数据处理</tag>
+         
+        <tag>图像处理</tag>
+         
+        <tag>python</tag>
+         
+         
+           
+             
+              <breadCrumb title="python图像处理" url="http://berryk.top/categories/python%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
           
         </display>
     </data>
