@@ -340,9 +340,6 @@ lda2vec 专门在 word2vec 的 skip-gram 模型基础上建模，以生成单词
 ![](https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9J6ob2AFQ1OajPLGGStYY0IgFYfGEkt7fHHKLOW2r2f0niah8ylHVwIhhBlsREVicYTKCVnkeW8ugQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
 
 
-博客地址：https://multithreaded.stitchfix.com/blog/2016/05/27/lda2vec/#topic=38&lambda=1&term=
-
-代码地址：https://github.com/cemoody/lda2vec
 
 
 
